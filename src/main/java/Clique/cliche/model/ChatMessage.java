@@ -4,10 +4,21 @@ package Clique.cliche.model;
 public class ChatMessage {
     private String content;
     private String sender;
+
+    private String timeStamp;
+
     private MessageType type;
 
     public enum MessageType {
         CHAT, LEAVE, JOIN
+    }
+
+    public String getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(String timeStamp) {
+        this.timeStamp = timeStamp;
     }
 
     public String getContent() {
